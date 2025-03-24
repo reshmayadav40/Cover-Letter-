@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cover letter generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="" alt="logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#resume">Build Resume</a>
+                <a href="#aboutus">About Us</a>
+                <a href="#main1"></a><button onclick="about()" id="bt">sign-up</button>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+
+        <section id="home">
+            <div class="imag">
+                <img src="https://images-ext-1.discordapp.net/external/YDxukdOKCe1BxMkyOV2SoJJcvh9bdrSu7HbKznZCbyw/%3Ftype%3Dwebp%26to%3Dmin%26r%3D-1/https/pastatic.picsart.com/cms-pastatic/28bb43d3-ddcf-4975-a6df-17968503b899.png?quality=lossless&format=webp&width=1000&height=750"
+                    alt="">
+            </div>
+            <div class="divhome">
+                <p id="info">AI Cover Letter Generator</p>
+                <h1 id="homeh1">Generate a cover letter in seconds with artificial intelligence.</h1>
+                <p id="info1">You don't have to be a writer to experience writer's block. Our AI Cover Letter
+                    Writer can help you
+                    with your first draft.</p>
+            </div>
+        </section>
+
+
+        <section id="resume">
+            <button id="click">Build My Resume Now</button>
+
+            <div class="inf">
+                <div id="resumee" style="display: none;">
+                    <div class="a">
+                        <div class="infor">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Enter Name">
+
+                        </div>
+                        <div class="infor">
+                            <label for="Last Name">Last Name</label>
+                            <input id="rem" type="text" placeholder="write your last name...">
+                        </div>
+                    </div>
+
+                    <div class="b">
+                        <div class="infor">
+                            <label for="jobTitle">Job Title</label>
+                            <input type="text" id="jobTitle" placeholder="Enter the job title...">
+                        </div>
+                        <div class="infor">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" placeholder="Enter the company name...">
+                        </div>
+                    </div>
+
+                    <div class="c">
+                        <div class="infor">
+                            <label for="degree">Degree</label>
+                            <select id="degree">
+                                <option value="Bachelors">Bachelors</option>
+                                <option value="Masters">Masters</option>
+                                <option value="Diploma">Diploma</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+
+                        <div class="infor">
+                            <label for="roleExcitement">Why are you excited for this role?</label>
+                            <textarea id="roleExcitement"
+                                placeholder="Explain what excites you about this job..."></textarea>
+                        </div>
+                    </div>
+                    <div class="d">
+                        <div class="infor">
+                            <label for="projects">Projects (GitHub or Live Links)</label>
+                            <textarea id="projects" placeholder="Mention your projects and provide links..."></textarea>
+                        </div>
+                        <div class="infor">
+                            <label for="careerGoals">Career Goals</label>
+                            <textarea id="careerGoals" placeholder="Write your long-term career goals..."></textarea>
+                        </div>
+                    </div>
+                    <div class="e">
+                        <div class="infor">
+                            <label for="skills">Your Skills</label>
+                            <input id="skills" type="text" placeholder="write your skills...">
+                        </div>
+
+                        <div class="infor">
+                            <label for="Other Information">Other Information</label>
+                            <textarea name="Other Information" id="otherInfo"
+                                placeholder="any Other Information which you want to add"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <!-- <button id="submitBtn" type="button">Submit</button> -->
+
+            </form>
+            <button onclick="generateCoverLetter()">Generate Cover Letter</button>
+        </section>
+
+
+
+        <section id="output" class="output">
+            Your resume will come here
+        </section>
+        <section id="aboutus">
+            <h1>ABOUT US</h1>
+            <div class="about">
+                <div>
+                    <h1>Generate an interview-ready resume in minutes.</h1>
+                    <p>Our award-winning Resume Builder uses easy-to-follow prompts and customizable templates
+                        to help
+                        you write a resume in under 15 minutes!</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy-6w7bEHyzjVhPo2O5xop7hUNQBFpgVXZJQ&s"
+                        alt="">
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx0LCj1vC3Q7LzZ9IL4BFbjjTv_M3TJhcv_VXgFYsjLDQzdSzOSO-wJqe-QOg9CO-LIHk&usqp=CAU"
+                        alt="">
+                </div>
+                <div>
+                    <h1>Make a matching cover letter.</h1>
+                    <p>Our Cover Letter Generator features prewritten content targeted to the job that you can
+                        customize
+                        and add to your letter with a single click.</p>
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <h1>
+                        Get inspired with high-quality examples.
+                    </h1>
+                    <p>LiveCareer’s library of resume examples and cover letter examples provides expert-written
+                        samples
+                        covering hundreds of job titles and industries.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0_EPCqhqgioihQlYjJ7dXOwR9T53bLgk_A&s"
+                        alt="">
+                </div>
+            </div>
+            <div class="about">
+                <div>
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                </div>
+                <div>
+                    <h1>ATS Resume Checker optimizes your resume.</h1>
+                    <p>Get instant advice and optimization tips to bypass the bots with our new ATS Resume
+                        Checker.</p>
+                </div>
+            </div>
+            <div class="about">
+                <!-- <div>
+                    <h1>Full-service professional writing help.</h1>
+                    <p>Want a hands-on approach? LiveCareer offers resume writing service. Meet with a real
+                        writer and
+                        get a custom resume and cover letter.</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpB2f1tIITtLVHrLrN-lvYHO_F4VNqGs61qA&s"
+                        alt="">
+                </div> -->
+            </div>
+        </section>
+
+
+
+        <section id="feedback" style="display: noe;">
+            <h1>What People Say
+                About Our Services
+            </h1>
+            <div class="feed">
+                <div class="feedb">
+                    <p>“I was able to take my outdated resume and design in a few easy steps an impressive
+                        resume to
+                        give to potential employers. Thank you.”</p>
+                    <img src="https://www.livecareer.com/lcapp/uploads/2023/08/melanie.png" alt="">
+                </div>
+                <div class="feedb">
+                    <p>“Guidelines for creating a resume were extremely helpful. Suggestions for input were
+                        tailored for
+                        the specific job, resulting in a polished and professional resume. Good Job LiveCareer.”
+                    </p>
+                    <img src="https://www.livecareer.com/lcapp/uploads/2023/08/russel.png" alt="">
+                </div>
+                <div class="feedb">
+                    <p>“I used LiveCareer multiple times when looking for a new job to update my resume.”</p>
+                    <img src="https://www.livecareer.com/lcapp/uploads/2023/08/rainey.png" alt="">
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+    <div class="main1"  style="display: none;">
+        
+        <form id="form1">
+            <h3>Sign-up</h3>
+                <label for="name">Name:</label>
+                <i class="fa-solid fa-user"></i>
+                <input id="name" name="name" type="text" required />
+                
+                <label for="email">Email:</label>
+                <i class="fa-solid fa-envelope"></i>
+            
+                <input id="email" name="email" type="text" required />
+
+                <label for="password">Password:</label>
+                <i class="fa-solid fa-lock"></i>
+              
+                <input id="password1" name="password" type="text" required />
+
+                <label for="right">
+                    <input class="agri" id="I" type="checkbox" required name="true" />
+                    I accept</label>
+                <input type="submit" value="sign-up " id="button" />
+        </form>
+    </div>
+    <!-- <div class="main2">
+        <h1> Log-in</h1>
+        <form action="" id="form2">
+                <label for="email">Email:</label>
+                <i class="fa-solid fa-envelope"></i>
+
+                <input id="email" name="email" type="text" required />
+                <label for="password">Password:</label>
+                <i class="fa-solid fa-unlock"></i>
+
+                <input id="password1" name="password" type="text" required />
+                <label for="right">
+                    <input class="agri" id="I" type="checkbox" required name="true" />
+                    I accept</label>
+                <input type="submit" value="log-in" id="button3" />
+        </form>
+    </div> -->
+
+
+
+
+    <footer>
+        <div class="icon">
+            <i id="i1" class="fa-brands fa-google"></i>
+            <i id="i1" class="fa-brands fa-instagram"></i>
+            <i id="i1" class="fa-brands fa-twitter"></i>
+            <i id="i1" class="fa-brands fa-linkedin-in"></i>
+            <i id="i1" class="fa-brands fa-facebook-f"></i>
+            <i id="i1" class="fa-brands fa-youtube"></i>
+            <i id="i1" class="fa-brands fa-github"></i>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

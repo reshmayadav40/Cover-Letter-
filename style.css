@@ -18,14 +18,10 @@ header {
     align-items: center;
 }
 
-
-
 #resumee {
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     display: inline-block;
- 
     gap: 10px;
     gap: 10px;
     width: 60%;
@@ -35,15 +31,14 @@ header {
     margin: 2% auto;
     padding: 1rem;
     border-radius: 5px;
-    /* background-color: red; */
     box-shadow: 7px 4px 7px 4px rgb(15, 14, 14);
 }
 
-.infor{
+.infor {
     margin: 20px;
     border: .2rem solid wheat;
     border-radius: 10px;
-    width: calc(50% - 5px); 
+    width: calc(50% - 5px);
     background-color: #ebe5e5;
     padding: 20px;
     color: #111;
@@ -51,9 +46,14 @@ header {
     box-shadow: 4px 4px 3px 2px rgb(119, 114, 114);
 }
 
-.a, .b, .c, .d, .e{
+.a,
+.b,
+.c,
+.d,
+.e {
     display: flex;
 }
+
 div>nav {
     display: flex;
     flex-direction: column;
@@ -69,6 +69,7 @@ button {
     color: black;
     font-size: 1.5rem;
     border-radius: 1rem;
+    margin: 1rem;
     background-color: orange;
 }
 
@@ -82,9 +83,7 @@ button:hover {
     margin: 1rem;
     padding: 1rem;
     display: flex;
-   
     border-radius: 10px;
-   
 }
 
 #name {
@@ -94,13 +93,10 @@ button:hover {
     border-radius: 10px;
 }
 
-
-
 #degree {
     margin: 1rem;
     padding: 1rem;
     display: flex;
-  
     border-radius: 10px;
 }
 
@@ -108,36 +104,28 @@ button:hover {
     margin: 1rem;
     padding: 1rem;
     display: flex;
- 
     border-radius: 10px;
-   
 }
 
 #company {
     margin: 1rem;
     padding: 1rem;
     display: flex;
-
     border-radius: 10px;
-   
 }
 
 #roleExcitement {
     margin: 1rem;
     padding: 1rem;
     display: flex;
- 
     border-radius: 10px;
-   
 }
 
 #projects {
     margin: 1rem;
     padding: 1rem;
     display: flex;
-  
     border-radius: 10px;
-   
 }
 
 #careerGoals {
@@ -146,7 +134,7 @@ button:hover {
     display: flex;
 
     border-radius: 10px;
-   
+
 }
 
 #skills {
@@ -155,7 +143,7 @@ button:hover {
     display: flex;
 
     border-radius: 10px;
-   
+
 }
 
 .ima {
@@ -171,7 +159,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-   
+
 }
 
 #r {
@@ -186,6 +174,12 @@ label {
     margin-top: 2rem;
     width: 60VW;
     height: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 2rem;
     border: .7rem solid #999;
     border-radius: 1rem;
     margin-left: 8rem;
@@ -196,12 +190,14 @@ a {
     text-decoration: none;
     color: white;
     font-size: 2em;
-    padding: 1rem;
+    padding: 0.6rem;
+    border-radius: 20px;
 }
 
 a:hover {
     letter-spacing: .1rem;
     color: orange;
+    background-color: #0056b3;
 }
 
 #mainimg {
@@ -223,9 +219,6 @@ img:hover {
     cursor: pointer;
 }
 
-
-
-
 select {
     width: 9rem;
 }
@@ -246,27 +239,24 @@ select {
 }
 
 .feedb {
-    border: 1px solid rgb(190, 186, 186);
+    border: 1px solid rgb(178, 28, 28);
     margin-left: 1rem;
     border-radius: 4px;
 }
-
 
 div>nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* justify-content: ; */
     position: absolute;
     margin-top: 5em;
     margin-left: 1.5em;
-
 }
 
 nav>a {
     text-decoration: none;
     color: white;
-    line-height: 2em;
+    line-height: 3em;
 }
 
 #fa {
@@ -301,8 +291,6 @@ nav>a {
     color: #f4efef;
 }
 
-
-
 form {
     width: 500px;
 }
@@ -319,7 +307,7 @@ input[type="submit"] {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-}   
+}
 
 input[type="checkbox"] {
     display: inline-block;
@@ -328,13 +316,7 @@ input[type="checkbox"] {
     font-size: 1rem;
     background-color: transparent;
     border: none;
-
 }
-
-/* label {
-    display: block;
-    margin: 0.5rem 0;
-} */
 
 input {
     width: 100%;
@@ -359,7 +341,6 @@ i {
 }
 
 h1 {
-
     text-align: center;
 }
 
@@ -371,14 +352,14 @@ h1 {
     background-color: #ff7272;
     border-radius: 9px;
     margin-left: 200px;
-
 }
 
 #buttonL:hover {
     color: #ff7272;
     background-color: white;
 }
-.main1{
+
+.main1 {
     background-color: #dfd6d6;
     width: 60%;
     padding: 2em;
@@ -387,26 +368,18 @@ h1 {
     box-shadow: 10px 5px 5px rgb(7, 7, 7);
 }
 
-
-/* General Styling */
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    width: 80%;
-    padding: 20px;
-    background: #f4f4f4;
-} */
-
 .container {
     max-width: 600px;
     margin-left: 200px;
     background: #fff;
+
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2, h3 {
+h2,
+h3 {
     text-align: center;
     color: #333;
 }
@@ -414,27 +387,15 @@ h2, h3 {
 p {
     line-height: 1.6;
     font-size: 16px;
-    color: #555;
+    color: #050202;
 }
-
-/* Button Styling */
-/* button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    background: #007BFF;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-} */
 
 button:hover {
     background: #0056b3;
 }
 
-#resumee, #output {
+#resumee,
+#output {
     display: none;
 }
 
@@ -456,12 +417,110 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.cover-letter pre {
-    white-space: pre-wrap;
-    font-family: Arial, sans-serif;
+@media (max-width:1105px) {
+    #resumee {
+        width: 70vw;
+    }
+    .infor {
+        width: 20vw;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 778px) {
+
+    body {
+        width: 80vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    header {
+        width: 100%;
+        height: 15%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        position: fixed;
+    }
+
+    #resumee {
+        width: 70vw;
+    }
+
+    h,
+    p {
+        width: 100%;
+        padding: 50px;
+        font-size: 18px;
+        color: #111;
+    }
+
+    .infor {
+        width: 20vw;
+    }
+
+    textarea {
+        width: 6rem;
+    }
+
+    .main {
+        width: 100%;
+        padding-right: 8rem;
+    }
+
+    .imag img {
+        margin-top: 15vh;
+        width: 80vw;
+        padding: 0px;
+        padding-top: 1px;
+    }
+
+    .imag {
+        width: 100%;
+        margin-top: 10vh;
+        padding: 0%;
+    }
+
+    .res {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: centera;
+        align-items: center;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 590px) {
+    body {
+        width: 100vw;
+        height: 100vw;
+
+    }
+    header {
+        width: 100%;
+        height: 13%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        position: fixed;
+    }
+
+    .res{
+        font-size: 1rem;
+    }
+    #resumee {
+        width: 80vw;
+        margin-left: 10px;
+    }
+    .infor{
+        width: 25vw;
+    }
     .container {
         padding: 15px;
     }
@@ -470,5 +529,45 @@ button:hover {
         font-size: 14px;
     }
 }
+@media (max-width: 390px) {
+    body{
+        font-size: 2rem;
+    }
+    .imag img{
+        width: 100vw;
+        height: 50vh;
+        margin: 90px;
+    }
+    
+    header {
+        position: fixed;
+        width: 100%;
+        height: 9%;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        
+    }
+    .res{
+        font-size: 1.7rem;
+    }
 
-@media (max-width: 791px) {}
+    #resume{
+        width: 80vw;
+        font-size: 1.8rem;
+    }
+    .infor{
+        width: 25vw;
+    }
+    h1,p{
+        width: 25vh;
+        font-size: 1.4rem;
+    }
+    .res{
+        font-size: 1rem;
+    }
+    .res:hover{
+        letter-spacing: .4rem;
+    }
+   
+}
